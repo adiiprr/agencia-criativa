@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agência Criativa Web — Soluções Digitais</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Agência Criativa Web — design, branding e desenvolvimento para marcas que querem crescer.">
+</head>
+<body>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <img src="imagens/logo/logobranco.webp" alt="Agência Criativa Web" class="brand-logo" />
+        <span class="brand-text">Agência Criativa Web</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato" class="cta-nav">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1 class="hero-title">Transformamos ideias em experiências digitais.</h1>
+        <p class="hero-sub">Design estratégico, desenvolvimento e branding para marcas que desejam crescer com propósito.</p>
+        <div class="hero-ctas">
+          <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+          <a href="#portfolio" class="btn btn-outline">Ver Portfólio</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img
+          src="hero-1600.jpg"
+          srcset="hero-400.jpg 400w, hero-800.jpg 800w, hero-1600.jpg 1600w"
+          sizes="(max-width:768px) 90vw, 50vw"
+          alt="Exemplo de projeto digital — Agência Criativa Web"
+          class="hero-img"
+        />
+        <div class="hero-deco" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section section-about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>Quem somos</h2>
+        <p>Somos uma equipe multidisciplinar dedicada a criar produtos digitais que geram resultados. Unimos estratégia, design e tecnologia para projetos escaláveis.</p>
+        <ul class="about-list">
+          <li>Foco no usuário</li>
+          <li>Processo orientado a dados</li>
+          <li>Entrega com qualidade</li>
+        </ul>
+      </div>
+      <div class="about-media">
+        <img src="equipe.jpg"
+             srcset="equipe-400.jpg 400w, equipe-600.jpg 600w, equipe-1600.jpg 1600w"
+             sizes="(max-width:768px) 90vw, 40vw"
+             alt="Equipe Agência Criativa Web" />
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="section section-services">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <p class="sub">Soluções completas para presença digital</p>
+
+      <div class="servicos-grid">
+        <article class="card servico-card">
+          <img src="imagens/icones/desing.png" alt="" class="icon" />
+          <h3>Design Gráfico</h3>
+          <p>Identidade visual, materiais de comunicação e ilustrações que conversam com seu público.</p>
+        </article>
+
+        <article class="card servico-card">
+          <img src="imagens/icones/web.png" alt="" class="icon" />
+          <h3>Desenvolvimento Web</h3>
+          <p>Sites e aplicações performáticas, acessíveis e otimizadas para conversão.</p>
+        </article>
+
+        <article class="card servico-card">
+          <img src="imagens/icones/brading.png" alt="" class="icon" />
+          <h3>Branding</h3>
+          <p>Posicionamento e criação de marcas que se destacam no mercado.</p>
+        </article>
+
+        <article class="card servico-card">
+          <img src="imagens/icones/marketing.png" alt="" class="icon" />
+          <h3>Marketing Digital</h3>
+          <p>Estratégias de performance, conteúdo e gestão de campanhas para alcance e conversão.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section section-portfolio">
+    <div class="container">
+      <h2>Portfólio</h2>
+      <p class="sub">Projetos recentes</p>
+
+      <div class="portfolio-grid">
+        <figure class="project">
+          <img src="imagens/portifolio/feche-as-maos-segurando-o-tablet.jpg" alt="Projeto 1">
+          <figcaption>CRIPTOS — Como Investir em 2025/2026 </figcaption>
+        </figure>
+
+        <figure class="project">
+          <img src="imagens/portifolio/marketing-digital-com-icones-e-empresarios.jpg" alt="Projeto 2">
+          <figcaption>PRISM — Soluções Virtuais</figcaption>
+        </figure>
+
+        <figure class="project">
+          <img src="imagens/portifolio/adolescente-estudante-lendo-livro-encostado-na-prateleira.jpg" alt="Projeto 3">
+          <figcaption>BOOKCOFFEE — Espaço para Leitura e Café</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="section section-testimonials">
+    <div class="container">
+      <h2>Depoimentos</h2>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial">
+          <p>"A equipe superou nossas expectativas — design, prazos e comunicação excelentes."</p>
+          <cite>— Joana Pereira, CEO Loja X</cite>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p>"Profissionalismo e entrega com foco em resultado. Recomendamos!"</p>
+          <cite>— Roberto Costa, Marketing</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section section-contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Fale conosco</h2>
+        <p>Endereço: Rua Exemplo, 123 — Belo Horizonte, MG</p>
+        <p>Telefone: (31) 9XXXX-XXXX</p>
+        <p>Email: contato@agenciacriativaweb.com</p>
+        <ul class="socials">
+          <li>
+            <a href="https://www.instagram.com/seu_instagram" target="_blank" aria-label="Instagram">
+              <img src="imagens/icones/instagram.svg" alt="Instagram" class="icon-social" />
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/seu_linkedin" target="_blank" aria-label="LinkedIn">
+              <img src="imagens/icones/linkedin.svg" alt="LinkedIn" class="icon-social" />
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" action="#" method="post" aria-label="Formulário de contato">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="ano"></span> Agência Criativa Web — Todos os direitos reservados.</p>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
