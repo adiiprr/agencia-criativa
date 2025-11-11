@@ -1,0 +1,36 @@
+@use 'variaveis' as v;
+@use 'mixins' as m;
+
+// =================== COMPONENTES ===================
+
+.btn {
+  @include m.botao(transparent, v.$text);
+
+  &--primary {
+    @include m.botao(v.$btn-bg);
+    box-shadow: 0 6px 20px rgba(255, 59, 107, 0.12);
+  }
+
+  &--outline {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+}
+
+.service-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 1.5rem;
+  border-radius: v.$radius; /* 👈 Aqui está o ajuste */
+  border: 1px solid rgba(255,255,255,0.03);
+  transition: transform v.$transition, box-shadow v.$transition;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 60px rgba(2,6,23,0.7);
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: .8rem;
+  }
+}

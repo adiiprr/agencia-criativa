@@ -1,0 +1,17 @@
+@use 'variaveis' as v;
+@use 'mixins' as m;
+
+.header {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+
+  &__inner {
+    @include m.flex-center(space-between);
+    padding: 1rem 0;
+  }
+
+  &__brand {
+    @include m.flex-center(.75rem);
+    color: v.$text;
+  }
+}

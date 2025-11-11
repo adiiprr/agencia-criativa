@@ -1,0 +1,26 @@
+@use 'variaveis' as v;
+
+* { box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body {
+  margin: 0;
+  background: v.$bg;
+  color: v.$text;
+  font-family: v.$ff-body;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: min(94%, v.$max-width);
+  margin: 0 auto;
+}
+
+.text--muted { color: v.$muted; }
+
+.section {
+  padding: 4rem 0;
+}

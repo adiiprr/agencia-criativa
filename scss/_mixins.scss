@@ -1,0 +1,28 @@
+@use 'variaveis' as v;
+
+// Centraliza conteúdo flexível
+@mixin flex-center($gap: 1rem) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+// Botão padrão reutilizável
+@mixin botao($bg-color, $text-color: #fff) {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .7rem 1.1rem;
+  border-radius: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 0;
+  background: $bg-color;
+  color: $text-color;
+  transition: transform v.$transition;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
